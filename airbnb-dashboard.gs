@@ -4,7 +4,7 @@
  * Jak spustit:
  *   1. Otevrete novy Google Spreadsheet (sheets.new)
  *   2. Rozsireni > Apps Script
- *   3. Nahradte veskeры existujici kod timto souborem (Ctrl+A, vlozit)
+ *   3. Nahradte veskery existujici kod timto souborem (Ctrl+A, vlozit)
  *   4. Kliknete na trojuhelnik (Run) > funkce "createDashboard"
  *   5. Schvalte pozadovana opravneni
  */
@@ -33,7 +33,7 @@ var VAR_TYPES = [
   'Uklid',
   'Vybaveni / doplneni',
   'Pradelna',
-  'Zahrada / exteriér',
+  'Zahrada / exterieur',
   'Ostatni'
 ];
 
