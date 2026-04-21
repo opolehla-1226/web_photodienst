@@ -70,9 +70,9 @@ function createDashboard() {
   const sheets = {};
   sheetOrder.forEach(name => {
     let s = ss.getSheetByName(name);
-    if (!s) s = ss.insertSheet(name);
-    else {
-      // breakApart() musí být před clearFormats() – jinak sloučené buňky přežijí opakované spuštění
+    if (!s) {
+      s = ss.insertSheet(name);
+    } else {
       s.getRange(1, 1, s.getMaxRows(), s.getMaxColumns()).breakApart();
       s.clearContents().clearFormats().clearConditionalFormatRules();
     }
