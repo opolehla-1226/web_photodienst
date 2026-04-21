@@ -242,7 +242,7 @@ function buildDashboardSheet(s) {
   // Nadpis
   s.getRange('A1').setValue('PŘEHLED PORTFOLIA  –  AIRBNB')
     .setFontSize(18).setFontWeight('bold').setFontColor('#4a148c');
-  s.getRange('A1:M1').merge();
+  // Nesloučit – merge přes A1:M1 by kolidoval se setFrozenColumns(1)
 
   // Výběr období
   s.getRange('A3').setValue('ROK');
